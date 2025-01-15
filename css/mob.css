@@ -65,3 +65,52 @@
     }
 
 }   
+
+
+@media (max-width: 390px) {
+    .navbar{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo{
+        font-size: 13px;
+    }
+    .menu li a{
+        font-size: 10px;
+    }
+    .social-icons a i{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .items{
+        width: 95%;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .item-maior, .item{
+        display: flex;
+        padding: 15px 30px;
+        gap: 35px;
+        align-items: center;
+    }
+    .item-maior img, .item img{
+        width: 100px;
+        height: 160px;
+    }
+    .icons {
+        gap: 8px;
+    }
+    .item-maior .icons i,svg,.item .icons i,svg{
+        font-size: 25px;
+        width: 37px;
+    }
+    .item-maior .download, .item .download{
+        padding: 11px 36px;
+        font-size: 10px;
+    }}
