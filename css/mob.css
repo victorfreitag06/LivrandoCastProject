@@ -27,17 +27,18 @@
         padding: 19px 18px ;
     }
     .item-maior{
-        padding: 25px 35px;
+        display: flex;
+        padding: 30px 10px;
     }
-    
-    .card-img-square{
-        margin:  0;
+    .item-maior{
+        padding: 10px 35px;
+        gap: 35px;
+        align-items: center;
     }
-    
-    .item .card-img-square img{
-        width: 100px;
-        height: 100px;
-      }
+    .item-maior img{
+        width: 120px;
+        height: 170px;
+    }
       .item img{
         width: 120px;
         height: 170px;
@@ -49,11 +50,17 @@
         font-size: 20px;
         width: 37px;
     }
-    .icons svg{
-        margin-top: 5px;
+    .item-maior .icons i,svg{
+        font-size: 25px;
+        width: 37px;
     }
+   
     .download{
         padding: 7px 40px;
+        font-size: 10px;
+    }
+    .item-maior .download{
+        padding: 11px 36px;
         font-size: 10px;
     }
 
