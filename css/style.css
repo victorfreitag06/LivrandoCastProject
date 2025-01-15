@@ -50,8 +50,8 @@
   font-size: 20px;
   color: var(--cor-primaria);
 }
-
 .welcome-section img {
+  object-fit: cover;
   width: 100%;
   max-height: 450px ;
   background: linear-gradient(rgb(238, 229, 229),
