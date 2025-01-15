@@ -112,7 +112,11 @@ h1 {
   box-shadow: 0 0 10px 0 #3e0084;
 }
 
-
+.icons i:hover, .navbar i:hover,.icons svg:hover{
+  color: #7320d1;
+  cursor: pointer;
+ 
+}
 
 .icons {
   display: flex;
@@ -143,8 +147,8 @@ svg {
 }
 
 .download:hover {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-primaria);
+  background-color: #7320d1;
+
 }
 
 .hidden-items {
@@ -197,10 +201,10 @@ svg {
   background: linear-gradient(#DFD5EA, white);
   border-top: 1px solid #3e00843b;
   padding: 20px 10px;
-  justify-content: center;
 }
 
 .video-container {
+
   display: flex;
   gap: 30px;
   /* Espaçamento entre os cards */
@@ -278,7 +282,11 @@ iframe {
 .video-card a:hover {
   text-decoration: underline;
 }
-
+@media (min-width: 1277px) {
+  .video-container{
+    justify-content: space-around;
+  }
+}
 @media (max-width: 500px) {
   .youtube {
     padding: 10px;
