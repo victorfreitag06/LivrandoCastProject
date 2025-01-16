@@ -1,5 +1,6 @@
 import mercadopago
 
+
 def gerar_link_pagamento():
     sdk = mercadopago.SDK("APP_USR-4021896762183709-011613-87bf49866e8f6c62189da6e63499ff0f-1284722156")
 
