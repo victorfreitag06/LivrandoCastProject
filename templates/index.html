@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivrandoCast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mob.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+</head>
+
+<body>
+    <section class="sub">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">LivrandoCast</h1>
+                <ul class="menu">
+                    <li><a href="#inicio">inicio</a></li>
+                    <li><a href="#episodio">episodio</a></li>
+                    <li><a href="#blog">blog</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/livrandocast/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC5HVdYgmUB03FE9Gj8_VbMQ"><i class="bi bi-youtube"></i></a>
+                    <a
+                        href="https://open.spotify.com/show/4doBhNhh2NKGGucaCSMb4O?si=98a0313d5f654cac&nd=1&dlsi=b44add7460a7437a"><i
+                            class="bi bi-spotify"></i></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <div class="welcome-section">
+                <img src="{{ url_for('static', filename='imagens/bemvindo-ao-livrando.png') }}">
+            </div>
+        </main>
+    </section>
+    <section id="episodio" class="carrossel">
+        <h1>Ultimos Episodios</h1>
+        <div class="container">
+
+            <div class="items">
+                <div class="item">
+                    <a href="src/arrume-sua-cama.html"> <img
+                            src="{{ url_for('static', filename='imagens/arrume-sua-cama-livro.png') }}">
+                    </a>
+                    <div>
+                        <div class="icons">
+                            <a href="https://open.spotify.com/episode/07PmYbf8K8vX1duLLNpP5X"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/us/episode/361213322?utm_campaign=clipboard-generic&utm_source=user_sharing&utm_medium=desktop&utm_content=talk_episode-361213322&deferredFl=1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+                            <a href="https://youtu.be/9gSuAEh4DCQ?si=LqZyhDSlIRbEXkKQ"><i style="margin-top: 5px;"
+                                    class="bi bi-youtube"></i></a>
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/arrume-sua-cama-livrandocast/id1516502375?i=1000550173839"><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <a href="{{ link_pagamento }}"><button>Pagar com Mercado Pago</button></a>
+
+                        <a href="src/arrume-sua-cama.html">
+                            <p>saber mais</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="item">
+                    <img src="{{ url_for('static', filename='imagens/correspondentes.jpg') }}">
+                    <div>
+                        <div class="icons">
+                            <a
+                                href="https://open.spotify.com/episode/6QBoe4eJuE5YqdHyM6TQZ4?si=LfiLg2EKQ6KgiJAJQRnw2A&nd=1&dlsi=1bd6a95833bc45bf"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/us/episode/344662092?utm_campaign=clipboard-generic&utm_source=user_sharing&utm_medium=desktop&utm_content=talk_episode-344662092&deferredFl=1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+                            <a href="https://youtu.be/1T9zTWoUE8Q?si=qGkZoFMNnZFCXd9f"><i style="margin-top: 5px;"
+                                    class="bi bi-youtube"></i></a>
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/correspondentes-livrandocast/id1516502375?i=1000543316683"><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <button class="download">DOWNLOAD</button>
+                        <p>saber mais</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ url_for('static', filename='imagens/a-sutil-arte-de-ligar-o-f-da-se.png') }}">
+                    <div>
+                        <div class="icons">
+                            <a
+                                href="https://open.spotify.com/episode/7mrCZ893psSppbtKWG29DP?si=chg2d-TIR5y7bwWl-J02lg&dl_branch=1&nd=1&dlsi=b38ae655f9084008"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/br/episode/322681622?utm_campaign=clipboard-generic&utm_source=user_sharing&utm_medium=desktop&utm_content=talk_episode-322681622&deferredFl=1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/a-sutil-arte-de-ligar-o-foda-se-livrandocast/id1516502375?i=1000532933856"><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <button class="download">DOWNLOAD</button>
+                        <p>saber mais</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ url_for('static', filename='imagens/ANIVERSARIO-LIVRANDOCAST.jpg') }}">
+                    <div>
+                        <div class="icons">
+                            <a
+                                href="https://open.spotify.com/episode/2cwmpCillEOwCDobS4qBbA?si=iLNz8inYTKa-1L7WogNZwg&nd=1&dlsi=d419e0a2a02b4929"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/br/episode/305709202?utm_campaign=clipboard-generic&utm_source=user_sharing&utm_medium=desktop&utm_content=talk_episode-305709202"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/todos-os-livros-anivers%C3%A1rio-livrandocast/id1516502375?i=1000524284543"><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <button class="download">DOWNLOAD</button>
+                        <p>saber mais</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ url_for('static', filename='imagens/sri-prem-baba-proposito.jpg') }}">
+                    <div>
+                        <div class="icons">
+                            <a
+                                href="https://open.spotify.com/episode/6n036nHhKBZrvGqJ8sapKJ?si=-GMS2tOlQBG-RBm4L_DdUQ&nd=1&dlsi=6dba109d879e4cd4"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/br/episode/296482292?utm_campaign=clipboard-generic&utm_source=user_sharing&utm_medium=desktop&utm_content=talk_episode-296482292"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/prop%C3%B3sito-livrandocast/id1516502375?i=1000518762817 "><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <button class="download">DOWNLOAD</button>
+                        <p>saber mais</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ url_for('static', filename='imagens/o-queijo-e-os-vermes.jpg') }}">
+                    <div>
+                        <div class="icons">
+                            <a
+                                href="https://open.spotify.com/episode/3eDYJx0LKvvl1zTwrn2AWc?si=S4iqgRTfTXmBz7PcYcsJ7A&nd=1&dlsi=7a12f4088a104aa1"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/br/episode/273747902?utm_campaign=clipboard-generic&utm_content=talk_episode-273747902&utm_medium=desktop&utm_source=user_sharing&deferredFl=1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/o-queijo-e-os-vermes-livrandocast/id1516502375?i=1000506458301"><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <button class="download">DOWNLOAD</button>
+                        <p>saber mais</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ url_for('static', filename='imagens/o-homem-mais-rico-da-babilonia.jpg') }}">
+                    <div>
+                        <div class="icons">
+                            <a href="https://open.spotify.com/episode/4drsSRzwZZRmKOcYp9lFtd"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/br/episode/267925442?utm_campaign=clipboard-generic&utm_content=talk_episode-267925442&utm_medium=desktop&utm_source=user_sharing&deferredFl=1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/o-homem-mais-rico-da-babil%C3%B4nia-livrandocast/id1516502375?i=1000503564557"><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <button class="download">DOWNLOAD</button>
+                        <p>saber mais</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ url_for('static', filename='imagens/quem-mexeu-no-meu-queijo.jpg') }}">
+                    <div>
+                        <div class="icons">
+                            <a href="https://open.spotify.com/episode/1JjurOObLbPGNUbeKW0mPj?si=fc5c9f888f024a7e"><i
+                                    class="bi bi-spotify"></i></a>
+                            <a
+                                href="https://www.deezer.com/br/episode/262712202?utm_campaign=clipboard-generic&utm_content=talk_episode-262712202&utm_medium=desktop&utm_source=user_sharing&deferredFl=1"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                    viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                    <path
+                                        d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                </svg></a>
+
+                            <a
+                                href="https://podcasts.apple.com/br/podcast/quem-mexeu-no-meu-queijo-livrandocast/id1516502375?i=1000500544804"><i
+                                    class="bi bi-apple"></i></a>
+                        </div>
+                        <button class="download">DOWNLOAD</button>
+                        <p>saber mais</p>
+                    </div>
+                </div>
+                <div class="item-maior">
+                    <img src="{{ url_for('static', filename='imagens/o-milagre-da-manha.jpg') }}">
+                    <div>
+                        <div>
+                            <div class="icons">
+                                <a href="https://open.spotify.com/episode/2iKH5ysNcy8zt72ZxeeVKQ"><i
+                                        class="bi bi-spotify"></i></a>
+                                <a
+                                    href="https://www.deezer.com/br/episode/257835652?utm_campaign=clipboard-generic&utm_content=talk_episode-257835652&utm_medium=desktop&utm_source=user_sharing&deferredFl=1"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                        viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                        <path
+                                            d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                    </svg></a>
+
+                                <a
+                                    href="https://podcasts.apple.com/br/podcast/o-milagre-da-manh%C3%A3-livrandocast/id1516502375?i=1000497496423"><i
+                                        class="bi bi-apple"></i></a>
+                            </div>
+                            <button class="download">DOWNLOAD</button>
+                            <p>saber mais</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden-items">
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='imagens/arte-da-guerra.png') }}">
+                        <div>
+                            <div class="icons">
+                                <a href="https://open.spotify.com/episode/5zIh90UAX8zVBrYdvhZJUD?si=1e7a6a6441bd4bdb"><i
+                                        class="bi bi-spotify"></i></a>
+                                <a
+                                    href="https://www.deezer.com/br/episode/255068922?utm_campaign=clipboard-generic&utm_content=talk_episode-255068922&utm_medium=desktop&utm_source=user_sharing&deferredFl=1"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                        viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                        <path
+                                            d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                    </svg></a>
+                                <a href="https://youtu.be/cbSA1dqYAaM?si=QVxId7-1-qqgVDmE"><i style="margin-top: 5px;"
+                                        class="bi bi-youtube"></i></a>
+                                <a
+                                    href="https://podcasts.apple.com/br/podcast/remake-a-arte-da-guerra-livrandocast/id1516502375?i=1000496048866"><i
+                                        class="bi bi-apple"></i></a>
+                            </div>
+                            <button class="download">DOWNLOAD</button>
+                            <p>saber mais</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img
+                            src="{{ url_for('static', filename='imagens/A-REVOLUCAO-DOS-BICHOS-LIVRANDOCAST-300x300.png') }}">
+                        <div>
+                            <div class="icons">
+                                <a href="https://open.spotify.com/episode/0ReFNkFr4Z4hW0bfCslh9k?si=d6bd17446f644d06"><i
+                                        class="bi bi-spotify"></i></a>
+                                <a
+                                    href="https://www.deezer.com/br/episode/249133582?utm_campaign=clipboard-generic&utm_source=user_sharing&utm_medium=desktop&utm_content=talk_episode-249133582"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                        viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                        <path
+                                            d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                    </svg></a>
+                                <a href="https://youtu.be/Be1FhnPT6yo?si=BZa62D0urZ4W0a_W"><i style="margin-top: 5px;"
+                                        class="bi bi-youtube"></i></a>
+                                <a
+                                    href="https://podcasts.apple.com/br/podcast/remake-a-revolu%C3%A7%C3%A3o-dos-bichos-livrandocast/id1516502375?i=1000492769750"><i
+                                        class="bi bi-apple"></i></a>
+                            </div>
+                            <button class="download">DOWNLOAD</button>
+                            <p>saber mais</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='imagens/10-mais-feliz.jpg') }}">
+                        <div>
+                            <div class="icons">
+                                <a href="https://open.spotify.com/episode/7oML6bfjcAkAixfJ5rwWXd?si=9d9f6334aa234909"><i
+                                        class="bi bi-spotify"></i></a>
+                                <a href="https://deezer.page.link/6H2G9j3n2ubAvnE1A"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                        viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                        <path
+                                            d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                    </svg></a>
+                                <a href="https://youtu.be/hKFHMNoMFEE?si=BEWIttKrhF9InpL9"><i style="margin-top: 5px;"
+                                        class="bi bi-youtube"></i></a>
+                                <a
+                                    href="https://podcasts.apple.com/br/podcast/10-mais-feliz-livrandocast/id1516502375?i=1000487148316"><i
+                                        class="bi bi-apple"></i></a>
+                            </div>
+                            <button class="download">DOWNLOAD</button>
+                            <p>saber mais</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='imagens/o-monge-e-o-executivo.jpg') }}">
+                        <div>
+                            <div class="icons">
+                                <a href="https://open.spotify.com/episode/3dsT1iR2VWOIWJcuXN60LY?si=cbdb0b3a42984fd2"><i
+                                        class="bi bi-spotify"></i></a>
+                                <a href="https://deezer.page.link/rTvhCwEvudeFofq79"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                        viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                        <path
+                                            d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                    </svg></a>
+                                <a href="https://youtu.be/19a3j_K9X94?si=dQVhCi9Dgk_WdXbj"><i style="margin-top: 5px;"
+                                        class="bi bi-youtube"></i></a>
+                                <a
+                                    href="https://podcasts.apple.com/br/podcast/o-monge-e-o-executivo-livrandocast/id1516502375?i=1000479887140"><i
+                                        class="bi bi-apple"></i></a>
+                            </div>
+                            <button class="download">DOWNLOAD</button>
+                            <p>saber mais</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='imagens/a-linguagem-dos-sentimentos.jpg') }}">
+                        <div>
+                            <div class="icons">
+                                <a href="https://open.spotify.com/episode/6dQw3PIM1zJiSs3diYfNyf?si=5710de242f4a42f8"><i
+                                        class="bi bi-spotify"></i></a>
+                                <a href="https://deezer.page.link/V5d3DRgvNTpn7ZXG7"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                        viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                        <path
+                                            d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                    </svg></a>
+                                <a href="https://youtu.be/W7BeWYqSJ3k?si=8OK4ANF7KWIdo5gF"><i style="margin-top: 5px;"
+                                        class="bi bi-youtube"></i></a>
+                                <a
+                                    href="https://podcasts.apple.com/br/podcast/a-linguagem-dos-sentimentos-livrandocast/id1516502375?i=1000478666320"><i
+                                        class="bi bi-apple"></i></a>
+                            </div>
+                            <button class="download">DOWNLOAD</button>
+                            <p>saber mais</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='imagens/pai-rico-pai-pobre.webp') }}">
+                        <div>
+                            <div class="icons">
+                                <a href="https://open.spotify.com/episode/6h0LLyFOcquhXTZF6Ga0QV?si=48c4537f85784bfb"><i
+                                        class="bi bi-spotify"></i></a>
+                                <a href="https://deezer.page.link/iqsm7j4gvRKhXd2i8"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="#3e0084" width="40px" height="40px"
+                                        viewBox="-2 -6.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-deezer">
+                                        <path
+                                            d="M0 9.786h3.64v1.062H0zM0 8.405h3.64v1.062H0zM0 7.025h3.64v1.062H0zM0 5.645h3.64v1.062H0zM0 4.264h3.64v1.062H0zM4.082 9.786h3.641v1.062H4.082zM4.082 8.405h3.641v1.062H4.082zM4.082 7.025h3.641v1.062H4.082zM8.164 9.786h3.641v1.062H8.164zM8.164 8.405h3.641v1.062H8.164zM8.164 7.025h3.641v1.062H8.164zM8.164 5.645h3.641v1.062H8.164zM8.164 4.264h3.641v1.062H8.164zM8.164 2.884h3.641v1.062H8.164zM8.164 1.503h3.641v1.062H8.164zM12.246 9.786h3.641v1.062h-3.641zM12.246 8.405h3.641v1.062h-3.641zM12.246 7.025h3.641v1.062h-3.641zM12.246 5.645h3.641v1.062h-3.641zM12.246 4.264h3.641v1.062h-3.641zM16.328 9.786h3.641v1.062h-3.641zM16.328 8.405h3.641v1.062h-3.641zM16.328 7.025h3.641v1.062h-3.641zM16.328 5.645h3.641v1.062h-3.641zM16.328 4.264h3.641v1.062h-3.641zM16.328 2.884h3.641v1.062h-3.641zM16.328 1.503h3.641v1.062h-3.641zM16.328.122h3.641v1.062h-3.641z" />
+                                    </svg></a>
+                                <a href="https://youtu.be/0qo_prUQVQY?si=3nhuXeoRhN8PXpNb"><i style="margin-top: 5px;"
+                                        class="bi bi-youtube"></i></a>
+                                <a
+                                    href="https://podcasts.apple.com/br/podcast/pai-rico-pai-pobre-livrandocast/id1516502375?i=1000477654172"><i
+                                        class="bi bi-apple"></i></a>
+                            </div>
+
+                            <button class="download">DOWNLOAD</button>
+                            <p>saber mais</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-ver-mais">
+                    <button id="verMaisBtn">VER TUDO</button>
+                </div>
+
+            </div>
+    </section>
+
+
+
+    <!-- Adicione mais vídeos conforme necessário -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>LivrandoCast</h2>
+            </div>
+            <div class="footer-links">
+                <a href="#">Inicio</a>
+                <a href="#">Episodios</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LivrandoCast. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -206,6 +206,17 @@ svg {
   margin-top: 20px;
 }
 
+.item a , .item-maior a {
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.item a p:hover, .item-maior a p:hover{
+  color: var(--cor-primaria);
+  text-decoration: underline;
+}
+
 .youtube {
   background: linear-gradient(#DFD5EA, white);
   border-top: 1px solid #3e00843b;
