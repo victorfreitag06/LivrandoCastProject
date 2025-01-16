@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from apimercadopago import gerar_link_pagamento
+import os
 
 app = Flask(__name__)
 
@@ -17,4 +18,5 @@ def compra_errada():
     return render_template("compraerrada.html")
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 5000))  # Render define a porta dinamicamente
+    app.run(host="0.0.0.0", port=port)
