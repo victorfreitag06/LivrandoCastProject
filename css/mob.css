@@ -1,0 +1,193 @@
+@media (max-width: 1134px) {
+   
+    .right, .left{
+        padding:8px;
+    }
+    .buttons a i,svg{
+        font-size: 30px;
+    }
+    a svg{
+        width: 60px;
+        height: 60px;
+    }
+    .opoia a img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 830px) {
+    .navbar{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo{
+        font-size: 16px;
+    }
+    .menu li a{
+        font-size: 13px;
+    }
+    .social-icons a i{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    .container{
+        width: 100%;
+    }
+    .items{
+        width: 95%;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .item{
+        padding: 19px 18px ;
+        margin-top: 30px;
+    }
+    .item-maior{
+        display: flex;
+        padding: 30px 10px;
+    }
+    .item-maior{
+        padding: 10px 35px;
+        gap: 35px;
+        align-items: center;
+    }
+    .item-maior img{
+        width: 120px;
+        height: 170px;
+    }
+      .item img{
+        width: 120px;
+        height: 170px;
+    }   
+    .icons {
+        gap: 8px;
+    }
+    .icons i,svg{
+        font-size: 20px;
+        width: 37px;
+    }
+    .item-maior .icons i,svg{
+        font-size: 25px;
+        width: 37px;
+    }
+   
+    .download{
+        padding: 7px 40px;
+        font-size: 10px;
+    }
+    .item-maior .download{
+        padding: 11px 36px;
+        font-size: 10px;
+    }
+
+    .content{
+        padding: 10px;
+    }
+    .text-container{
+        padding: 0px;
+        font-size: 13px;
+    }
+    .sobre-livro{
+        padding: 0;
+    }
+    .sobre-livro img{
+        width: 50%;
+        height: 100%;
+    }
+    header h1,
+header p {
+    font-size: 1.5rem;
+}
+.text-container h2 {
+    font-size: 1.5rem;
+}
+    .book-info{
+        flex-direction: column;
+    } 
+    .midias{
+        padding: 30px 0;
+    }
+    .midias h1{
+
+        font-size: 10px;
+    }
+
+    .midias img{
+        width: 50px;
+        height: 50px;
+    }
+    .buttons{
+        gap: 15px;
+        padding: 15px;
+    }
+    .buttons a i,svg{
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    a svg{
+        width: 40px;
+        height: 40px;
+    }
+    .opoia a img {
+        width: 150px;
+        height: 150px;
+        padding-right: 13px;
+    }
+    .right,.left{
+        padding: 0;
+    }
+}   
+
+
+
+@media (max-width: 390px) {
+    .navbar{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo{
+        font-size: 13px;
+    }
+    .menu li a{
+        font-size: 10px;
+    }
+    .social-icons a i{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .items{
+        width: 95%;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .item-maior, .item{
+        display: flex;
+        padding: 15px 30px;
+        gap: 35px;
+        align-items: center;
+    }
+    .item-maior img, .item img{
+        width: 100px;
+        height: 160px;
+    }
+    .icons {
+        gap: 8px;
+    }
+    .item-maior .icons i,svg,.item .icons i,svg{
+        font-size: 25px;
+        width: 37px;
+    }
+    .item-maior .download, .item .download{
+        padding: 11px 36px;
+        font-size: 10px;
+    }}
