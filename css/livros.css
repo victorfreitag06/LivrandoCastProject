@@ -31,14 +31,12 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    background: transparent;
-    box-shadow: 10px 10px 42px 10px var(--cor-fundo);
-    height: 50px;
-    background: linear-gradient(#ffffff, #DFD5EA);
-    border-bottom: 1px solid #3e00843b;
-    position: fixed;
-    width: 100%;
+    background: #fff;
 
+    height: 50px;
+    background: linear-gradient(#ffffff, #dfd5ea);
+    border-bottom: 1px solid #3e00843b;
+    width: 100%;
 }
 
 
