@@ -214,6 +214,7 @@ svg:hover {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    width: 60%;
 }
 
 .midias img {
