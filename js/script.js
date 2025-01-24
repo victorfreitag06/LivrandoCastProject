@@ -22,3 +22,4 @@ document.querySelectorAll('.audio-btn').forEach(button => {
       button.style.transform = 'scale(1)';
   });
 });
+
