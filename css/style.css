@@ -5,14 +5,14 @@
   --cor-branca: #f0f0f0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-
+  font-family: "Macondo",serif;
+  font-weight: 500;
+  font-style: normal;
 
 }
 
@@ -27,7 +27,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0), #DFD5EA);
   border-bottom: 1px solid #3e00843b;
   width: 100%;
-  font-family: "Macondo", serif;
+
   font-weight: 400;
   font-style: normal;
 }
@@ -36,7 +36,6 @@
 .logo {
   font-size: 24px;
   color: #3e0084;
-  font-weight: bold;
 }
 
 .menu {
@@ -48,8 +47,6 @@
 .menu li a {
   text-decoration: none;
   color: var(--cor-primaria);
-  font-weight: bold;
-  text-transform: lowercase;
   font-size: 16px;
 }
 
@@ -154,7 +151,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: px;
+  gap: 10px;
   margin: 28px 0;
 }
 
@@ -171,7 +168,6 @@ h1 {
     display: flex;
     justify-content: space-around;
     gap: 15px;
-    width: 40%;
     margin-bottom: 20px;
   }
 
@@ -381,15 +377,17 @@ svg {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 20px #3e00845e;
   font-size: 16px;
   border: 1px solid var(--cor-primaria);
 }
 
 .download:hover {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-primaria);
-  border: 1px solid var(--cor-primaria);
+  background: linear-gradient(45deg, #6003ca, #1f0142);
+  box-shadow: 0 0 20px #3e008486;
+  transform: scale(1.02);
+  color: rgb(252, 252, 213);
 
 }
 
@@ -457,7 +455,7 @@ svg {
 
 .midia-apoia {
   background-image: url('../img/fundo.jpg');
-  height: 500px;
+  height: 100%;
   width: 100%;
 
   background-size: cover;
@@ -608,7 +606,6 @@ iframe {
 
 .footer-logo h2 {
   font-size: 24px;
-  font-weight: bold;
   margin: 0;
 }
 

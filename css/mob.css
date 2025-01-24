@@ -224,19 +224,21 @@
     .item-maior,
     .item {
         display: flex;
-        padding: 15px 30px;
-        gap: 35px;
+        padding: 10px 10px;
+        gap: 18px;
         align-items: center;
     }
 
     .item-maior img,
     .item img {
-        width: 100px;
-        height: 160px;
+        width: 130px;
+        height: 135px;
+        object-fit: cover;
     }
 
     .icons {
-        gap: 8px;
+ 
+        gap: 7px;
     }
 
     .item-maior .icons i,
