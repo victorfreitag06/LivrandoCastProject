@@ -58,34 +58,40 @@
         margin-top: 0;
     }
 
-    .item, .item-maior {
+    .item,
+    .item-maior {
         padding: 19px 18px;
         margin-top: 30px;
     }
 
-    .item img , .item-maior img{
-        width: 120px;
-        height: 170px;
+    .item img,
+    .item-maior img {
+        width: 280px;
+        height: 280px;
     }
 
     .icons {
-        gap: 8px;
+        gap: 20px;
     }
 
-    .icons i,
-    svg {
-        font-size: 20px;
-        width: 37px;
+    .icons i
+ {
+        font-size: 40px;
+
+    }
+    .icons svg{
+        width: 70px;
+        height: 70px;
     }
 
-    
+
 
     .download {
-        padding: 7px 40px;
-        font-size: 10px;
+        padding: 14px 70px;
+        font-size: 20px;
     }
 
-    
+
 
     .content {
         padding: 10px;
@@ -162,7 +168,7 @@
 }
 
 
-@media(max-width:656px) {
+@media(max-width:506px) {
     .item-maior {
         display: flex;
         padding: 30px 10px;
@@ -178,15 +184,41 @@
         width: 120px;
         height: 170px;
     }
+
     .item-maior .download {
         padding: 11px 36px;
         font-size: 10px;
     }
+
     .item-maior .icons i,
     svg {
         font-size: 25px;
         width: 37px;
     }
+
+    .icons-midia .cima {
+        gap: 5px;
+    }
+    .cima {
+        .midia-social-tudo {
+            gap: 5px;
+            padding: 10px 20px;
+    
+        }
+        .midia-deezer img {
+            width: 60px;
+            height: 30px;
+        }
+
+        .midia-deezer p,
+        .midia-apple p,
+        .midia-spotify p,
+        .midia-youtube p {
+            font-size: 15px;
+
+        }
+    }
+
 }
 
 @media (max-width: 390px) {
@@ -237,9 +269,13 @@
     }
 
     .icons {
- 
+
         gap: 7px;
+
     }
+
+
+
 
     .item-maior .icons i,
     svg,

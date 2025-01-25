@@ -42,7 +42,7 @@
         </main>
     </section>
     <section id="episodio" class="carrossel">
-        <h1>Ultimos Episódios</h1>
+        <h1>Últimos Episódios</h1>
         <div class="container">
 
             <div class="items">
@@ -129,7 +129,7 @@
     <section class="midia-apoia">
         <h1>Nossas Plataformas
         </h1>
-        <div class="icons">
+        <div class="icons-midia">
             <div class="cima">
                 <a href="https://open.spotify.com/episode/7mrCZ893psSppbtKWG29DP">
                     <div class="midia-social-tudo midia-spotify">
@@ -161,6 +161,26 @@
         </div>
         </div>
     </section>
+    <section class="apoie">
+        <div class="apoie-content">
+            <h2>Apoie o LivrandoCast</h2>
+            <p>
+                Abaixo está o link do Apoia-se do LivrandoCast para que vocês possam dar uma força pra gente lá,
+                possibilitando assim a gente continuar a trazer mais e mais episódios e continuar a plantar e cultivar
+                conhecimentos e ideias em vocês, meus caros telespectouvintes! <strong>(Tem várias RECOMPENSAS pra quem
+                    apoia a gente…)</strong>
+            </p>
+            <a href="https://apoia.se/livrandocast" class="apoie-btn" target="_blank">APOIE AGORA</a>
+        </div>
+        <div class="apoie-img">
+            <a href="https://apoia.se/livrandocast" target="_blank">
+                <div class="image-overlay">
+                    <img src="img/apoia-seLogo.png" alt="Apoie o LivrandoCast">
+                </div>
+            </a>
+        </div>
+    </section>
+
     <section class="youtube">
         <h1>Últimos Vídeos</h1>
         <div class="video-container">
@@ -287,6 +307,20 @@
             iconCards.forEach(card => observer.observe(card));
         });
 
+        document.addEventListener("DOMContentLoaded", () => {
+    const sectionApoie = document.querySelector('.apoie');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Adiciona a animação
+                observer.unobserve(entry.target); // Para de observar após animar
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(sectionApoie);
+});
 
 
     </script>
