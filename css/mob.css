@@ -1,3 +1,26 @@
+@media (min-width: 1277px) {
+    .video-container {
+      padding: 20px 100px;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .youtube {
+      padding: 10px;
+  
+    }
+  
+    .video-container {
+      padding: 10px 0;
+    }
+  
+    .video-card {
+      flex: 0 0 90%;
+      /* Ocupar 90% da largura visível */
+    }
+  }
+  
 @media (max-width: 1134px) {
 
     .right,
@@ -24,152 +47,77 @@
         height: 250px;
     }
 }
-
-@media (max-width: 1830px) {
-    .navbar {
-        justify-content: space-between;
-        width: 100%;
+@media (max-width: 1024px) {
+    .apoie {
+      flex-direction: column-reverse;
+      /* Empilha os elementos verticalmente */
+      text-align: center;
+      gap: 40px;
+      padding: 2rem;
     }
-
-    .logo {
-        font-size: 18px;
+  
+    .apoie-content {
+      max-width: 90%;
     }
-
-    .menu li a {
-        font-size: 15px;
+  
+    .apoie h2 {
+      font-size: 2.5rem;
     }
-
-    .social-icons {
-        gap: 2px;
+  
+    .apoie p,
+    .apoie strong {
+      font-size: 1.8rem;
     }
-
-    .social-icons a i {
-        font-size: 18px;
+  }
+  
+  /* Ajuste para celulares */
+  @media (max-width: 768px) {
+    .apoie {
+      padding: 1.2rem;
+      gap: 10px;
     }
-
-    h1 {
-        font-size: 36px;
+  
+    .apoie h2 {
+      font-size: 2rem;
     }
-
-    .container {
-        width: 100%;
+  
+    .apoie p,
+    .apoie strong {
+      font-size: 1.1rem;
+      word-spacing: 3px;
+      /* Reduz o espaçamento para melhor leitura */
     }
-
-    .items {
-        width: 95%;
-        gap: 15px;
-        justify-content: center;
-        margin-top: 0;
+  
+    .apoie-btn {
+      font-size: 1rem;
+      padding: 8px 16px;
     }
-
-    .item,
-    .item-maior {
-        padding: 19px 18px;
-        margin-top: 30px;
+    .apoie-img{
+      padding:0 ;
     }
-
-    .item img,
-    .item-maior img {
-        width: 200px;
-        height: 200px;
+  }
+  
+  /* Ajuste para telas muito pequenas */
+  @media (max-width: 480px) {
+    .apoie h2 {
+      font-size: 1.8rem;
     }
-
-    .icons {
-        gap: 15px;
+  
+    .apoie p,
+    .apoie strong {
+      font-size: 1rem;
     }
-
-    .icons i {
-        font-size: 35px;
-
+  
+    .apoie-btn {
+      font-size: 0.9rem;
+      padding: 10px 30px;
     }
-
-    .icons svg {
-        width: 55px;
-        height: 65px;
+  
+    .apoie-img img {
+      width: 90px;
     }
+  }
 
-
-
-    .download {
-        padding: 10px 60px;
-        font-size: 18px;
-    }
-
-
-
-    .content {
-        padding: 10px;
-    }
-
-    .text-container {
-        padding: 0px;
-        font-size: 15px;
-    }
-
-    .sobre-livro {
-        padding: 0;
-    }
-
-    .sobre-livro img {
-        width: 50%;
-        height: 100%;
-    }
-
-    header h1,
-    header p {
-        font-size: 1.2rem;
-    }
-
-    .text-container h2 {
-        font-size: 1.5rem;
-    }
-
-    .book-info {
-        flex-direction: column;
-    }
-
-    .midias {
-        padding: 30px 0;
-    }
-
-    .midias h1 {
-
-        font-size: 8px;
-    }
-
-    .midias img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .buttons {
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .buttons a i,
-    svg {
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-    }
-
-    a svg {
-        width: 40px;
-        height: 40px;
-    }
-
-    .opoia a img {
-        width: 150px;
-        height: 150px;
-        padding-right: 13px;
-    }
-
-    .right,
-    .left {
-        padding: 0;
-    }
-}
 
 @media (max-width: 500px) {
     .navbar {
@@ -244,11 +192,12 @@
 
             font-size: 30px;
             width: 50px;
+            height: 60px;
         }
 
         .download {
-            padding: 12px 25px;
-            font-size: x;
+            padding: 11px 50px;
+            font-size: 13px;
         }
     }
 
@@ -285,7 +234,6 @@
     .buttons {
         gap: 8px;
     }
-
     .buttons a i,
     svg {
         font-size: 20px;

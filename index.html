@@ -19,12 +19,12 @@
     <section class="sub">
         <header>
             <nav class="navbar">
-                <a href="index.html">
+                <a href="/">
                     <h1 class="logo">LivrandoCast</h1>
                 </a>
                 <ul class="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#episodio">Episódio</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="src/episodios.html">Episódio</a></li>
                 </ul>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/livrandocast/"><i class="bi bi-instagram"></i></a>
@@ -37,7 +37,7 @@
         </header>
         <main>
             <div class="welcome-section">
-                <img src="img/bemvindo-ao-livrando.png" alt="">
+                <img src="img/bemvindoaolivrando.png" alt="">
             </div>
         </main>
     </section>
@@ -48,7 +48,7 @@
 
             <div class="items">
                 <div class="item">
-                    <a href="src/arrume-sua-cama.html"><img src="img/arrume-sua-cama-livro.png"
+                    <a href="src/episodios/arrume-sua-cama.html"><img src="img/arrume-sua-cama-livro.png"
                             alt="Arrume a sua cama"></a>
                     <div>
                         <div class="icons">
@@ -67,7 +67,7 @@
                                 href="https://podcasts.apple.com/br/podcast/arrume-sua-cama-livrandocast/id1516502375?i=1000550173839"><i
                                     class="bi bi-apple"></i></a>
                         </div>
-                        <a href="src/arrume-sua-cama.html"><button class="download">SABER MAIS</button></a>
+                        <a href="src/episodios/arrume-sua-cama.html"><button class="download">SABER MAIS</button></a>
                     </div>
                 </div>
                 <div class="item">
@@ -90,7 +90,7 @@
                                 href="https://podcasts.apple.com/br/podcast/correspondentes-livrandocast/id1516502375?i=1000543316683"><i
                                     class="bi bi-apple"></i></a>
                         </div>
-                        <a href="src/correspondentes.html"><button class="download">SABER MAIS</button></a>
+                        <a href="src/episodios/correspondentes.html"><button class="download">SABER MAIS</button></a>
                     </div>
                 </div>
                 <div class="item">
@@ -112,7 +112,7 @@
                                 href="https://podcasts.apple.com/br/podcast/a-sutil-arte-de-ligar-o-foda-se-livrandocast/id1516502375?i=1000532933856"><i
                                     class="bi bi-apple"></i></a>
                         </div>
-                        <a href="src/a-sutil-arte-de-ligar-o-fds.html"><button class="download">SABER MAIS</button></a>
+                        <a href="src/episodios/a-sutil-arte-de-ligar-o-fds.html"><button class="download">SABER MAIS</button></a>
                     </div>
                 </div>
 
@@ -121,7 +121,7 @@
         <div class="transition-overlay"></div>
 
         <!-- Botão para mudar de página -->
-        <a href="src/episodios.html" class="page-link">
+        <a href="src/episodios.html" class="page-link"> 
             <button class="ver-tudo">VER TODOS</button>
         </a>
 
@@ -238,8 +238,8 @@
                 <h2>LivrandoCast</h2>
             </div>
             <div class="footer-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#episodio">Episodios</a>
+                <a href="/">Inicio</a>
+                <a href="/episodios">Episodios</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.instagram.com/livrandocast/"><i class="fab fa-instagram"></i></a>
@@ -247,8 +247,8 @@
                 <a href="https://www.youtube.com/@livrandocast7098"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 LivrandoCast. Todos os direitos reservados.</p>
+        <div style="display: flex;justify-content: center;" class="footer-bottom">
+            <p>&copy; 2025 LivrandoCast. </p><p><a style="margin-left: 5px; color: white;" href="https://wa.me/15996317887"> @VictorFreitag</a></p>
         </div>
     </footer>
     <script>
@@ -329,20 +329,6 @@
             }, { threshold: 0.2 });
 
             observer.observe(sectionApoie);
-        });
-        document.addEventListener("DOMContentLoaded", () => {
-            const imageSection = document.querySelector('.image-section');
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            observer.observe(imageSection);
         });
 
 
