@@ -41,8 +41,9 @@
             </div>
         </main>
     </section>
+    
     <section id="episodio" class="carrossel">
-        <h1>Últimos Episódios</h1>
+        <h1 class="tituloEpi">Últimos Episódios</h1>
         <div class="container">
 
             <div class="items">
@@ -161,6 +162,8 @@
         </div>
         </div>
     </section>
+    
+
     <section class="apoie">
         <div class="apoie-content">
             <h2>Apoie o LivrandoCast</h2>
@@ -180,7 +183,6 @@
             </a>
         </div>
     </section>
-
     <section class="youtube">
         <h1>Últimos Vídeos</h1>
         <div class="video-container">
@@ -219,6 +221,13 @@
             </div>
         </div>
     </section>
+    <section class="image-section">
+        <div class="image-container">
+            <img src="img/nossamissao.png" alt="Imagem Representativa">
+        </div>
+    </section>
+    
+    
 
 
     <!-- Adicione mais vídeos conforme necessário -->
@@ -308,19 +317,33 @@
         });
 
         document.addEventListener("DOMContentLoaded", () => {
-    const sectionApoie = document.querySelector('.apoie');
+            const sectionApoie = document.querySelector('.apoie');
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible'); // Adiciona a animação
-                observer.unobserve(entry.target); // Para de observar após animar
-            }
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Adiciona a animação
+                        observer.unobserve(entry.target); // Para de observar após animar
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(sectionApoie);
         });
-    }, { threshold: 0.2 });
+        document.addEventListener("DOMContentLoaded", () => {
+            const imageSection = document.querySelector('.image-section');
 
-    observer.observe(sectionApoie);
-});
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(imageSection);
+        });
 
 
     </script>

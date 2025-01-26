@@ -25,22 +25,26 @@
     }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1830px) {
     .navbar {
         justify-content: space-between;
         width: 100%;
     }
 
     .logo {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .menu li a {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .social-icons {
+        gap: 2px;
     }
 
     .social-icons a i {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     h1 {
@@ -74,12 +78,12 @@
         gap: 15px;
     }
 
-    .icons i
- {
+    .icons i {
         font-size: 35px;
 
     }
-    .icons svg{
+
+    .icons svg {
         width: 55px;
         height: 65px;
     }
@@ -167,46 +171,96 @@
     }
 }
 
-
-@media(max-width:506px) {
-    .item-maior {
-        display: flex;
-        padding: 30px 10px;
+@media (max-width: 500px) {
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
     }
 
-    .item-maior {
-        padding: 10px 35px;
-        gap: 35px;
-        align-items: center;
+    .logo {
+        font-size: 18px;
+        padding: 40px 0;
     }
 
-    .item-maior img {
-        width: 120px;
-        height: 170px;
+    .menu li a {
+        font-size: 14px;
     }
 
-    .item-maior .download {
-        padding: 11px 36px;
-        font-size: 10px;
+    .social-icons i {
+        gap: 0px;
+        margin: 3px;
     }
 
-    .item-maior .icons i,
-    svg {
-        font-size: 25px;
-        width: 37px;
+    .social-icons a i {
+        font-size: 15px;
     }
 
-    .icons-midia .cima {
-        gap: 5px;
+    h1 {
+        font-size: 30px;
+        padding: 40px 0;
+        padding-top: 30px;
     }
+
+    .container {
+        width: 100%;
+    }
+
+    .container {
+
+        .items {
+            width: 95%;
+            gap: 10px;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .item-maior,
+        .item {
+            display: flex;
+            padding: 20px 15px;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .item-maior img,
+        .item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .icons {
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .item-maior .icons i,
+        svg,
+        .item .icons i,
+        svg {
+
+            font-size: 30px;
+            width: 50px;
+        }
+
+        .download {
+            padding: 12px 25px;
+            font-size: x;
+        }
+    }
+
     .cima {
         .midia-social-tudo {
             gap: 5px;
-            padding: 10px 20px;
-    
+            padding: 12px 30px;
+
         }
+
         .midia-deezer img {
-            width: 60px;
+            width: 50px;
             height: 30px;
         }
 
@@ -217,78 +271,6 @@
             font-size: 15px;
 
         }
-    }
-
-}
-
-@media (max-width: 390px) {
-    .navbar {
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .logo {
-        font-size: 13px;
-    }
-
-    .menu li a {
-        font-size: 10px;
-    }
-
-    .social-icons a i {
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .items {
-        width: 95%;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .item-maior,
-    .item {
-        display: flex;
-        padding: 10px 10px;
-        gap: 18px;
-        align-items: center;
-    }
-
-    .item-maior img,
-    .item img {
-        width: 130px;
-        height: 135px;
-        object-fit: cover;
-    }
-
-    .icons {
-
-        gap: 7px;
-
-    }
-
-
-
-
-    .item-maior .icons i,
-    svg,
-    .item .icons i,
-    svg {
-        font-size: 25px;
-        width: 37px;
-    }
-
-    .item-maior .download,
-    .item .download {
-        padding: 11px 36px;
-        font-size: 10px;
     }
 
     .right {
@@ -317,5 +299,8 @@
     .opoia a img {
         width: 130px;
         height: 130px;
+    }
+    .midia-apoia{
+        padding: 20px 0;
     }
 }
