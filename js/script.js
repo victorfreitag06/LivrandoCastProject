@@ -22,4 +22,33 @@ document.querySelectorAll('.audio-btn').forEach(button => {
       button.style.transform = 'scale(1)';
   });
 });
+         document.addEventListener("DOMContentLoaded", () => {
+            const iconCards = document.querySelectorAll('.midia-social-tudo');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Para de observar após a animação
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            iconCards.forEach(card => observer.observe(card));
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const sectionApoie = document.querySelector('.apoie');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Adiciona a animação
+                        observer.unobserve(entry.target); // Para de observar após animar
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(sectionApoie);
+        });
 

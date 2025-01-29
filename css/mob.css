@@ -145,9 +145,14 @@
 
     h1 {
         font-size: 30px;
-        padding: 40px 0;
+        padding: 10px 0;
         padding-top: 30px;
     }
+    .h1-titulo{
+      font-size: 30px;
+      padding: 20px 20px;
+      padding-top: 30px;
+  }
 
     .container {
         width: 100%;
@@ -222,15 +227,7 @@
         }
     }
 
-    .right {
-        width: 40%;
-    }
-
-    .right,
-    .left {
-        padding: 0px;
-    }
-
+    
     .buttons {
         gap: 8px;
     }
@@ -254,4 +251,68 @@
     .image-container img{
         width: 100%;
     }
+}
+@media(max-width:400px){
+  .navbar {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-size: 15px;
+    padding: 30px 0;
+}
+
+.menu li a {
+    font-size: 12px;
+}
+
+.social-icons i {
+    gap: 0px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.social-icons a i {
+    font-size: 13px;
+    font-weight: bold;
+}
+  header h1{
+      font-size: 28px;
+  }
+  .content{
+      border-radius: 0;
+  }
+  .book-image{
+      width: 180px;
+      height: 180px;
+      margin-top: 15px;
+
+  }
+  .text-container{
+      padding: 0px 20px;
+      width: 100%;
+      font-size: 14px;
+
+  }
+  .cima {
+    .midia-social-tudo {
+        gap: 5px;
+        padding: 8px 15px;
+
+    }
+
+    .midia-deezer img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .midia-deezer p,
+    .midia-apple p,
+    .midia-spotify p,
+    .midia-youtube p {
+        font-size: 15px;
+
+    }
+}
 }

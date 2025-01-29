@@ -67,9 +67,15 @@
 
 
 }
-
-h1 {
+h1{
   padding: 40px 0;
+  color: var(--cor-primaria);
+  text-align: center;
+  font-size: 48px;
+}
+.h1-titulo {
+  padding: 40px 30px;
+  background-color: white;
   color: var(--cor-primaria);
   text-align: center;
   font-size: 48px;
@@ -490,7 +496,7 @@ h1 {
   transform: translateY(50px);
   /* Começa deslocado para baixo */
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-
+  border-bottom: 1px solid #ffffff3b;
 
 }
 
