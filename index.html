@@ -309,7 +309,7 @@
                         observer.unobserve(entry.target); // Para de observar após a animação
                     }
                 });
-            }, { threshold: 0.2 }); // Define a porcentagem de visibilidade necessária para disparar a animação
+            }, { threshold: 0 }); // Define a porcentagem de visibilidade necessária para disparar a animação
 
             // Observa todos os cards de vídeo
             videoCards.forEach(card => {

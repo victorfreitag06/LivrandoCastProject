@@ -74,11 +74,13 @@ h1{
   font-size: 48px;
 }
 .h1-titulo {
-  padding: 40px 30px;
-  background-color: white;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
   color: var(--cor-primaria);
-  text-align: center;
+  text-align: end;
   font-size: 48px;
+  border-radius: 20%;
+  margin-top: 40px;
 }
 
 .carrossel {
@@ -627,16 +629,12 @@ strong {
   padding: 30px 10px;
 
   .video-container {
-
+    height: 100%;
     display: flex;
     gap: 30px;
-    /* Espaçamento entre os cards */
     overflow-x: auto;
-    /* Ativa a rolagem horizontal */
-
     scroll-snap-type: x mandatory;
-    /* Ativa o snap no scroll */
-    padding-bottom: 20px;
+    padding: 50px 0;
   }
 
   .video-container::-webkit-scrollbar {
